@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+      }
+      body {
+        overflow-x: hidden;
+        background-color: rgb(255 255 255 / 30%);
+        backdrop-filter: blur(10px);
+      }
+
+      .main {
+        height: 450px;
+        width: 100%;
+        background-color: brown;
+        background-image: url("https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png");
+        background-size: cover;
+        color: white;
+      }
+
+      .navbar {
+        width: 1300px;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        left: 180px;
+      }
+      .navbar p {
+        position: relative;
+        left: 20px;
+      }
+      .navbar ul {
+        list-style: none;
+        display: flex;
+        padding: 50px;
+      }
+      .navbar ul li {
+        padding: 25px;
+        font-size: 20px;
+        font-weight: 200;
+      }
+      .zo {
+        position: relative;
+        left: 590px;
+        top: 50px;
+      }
+      .zo h2 {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      .diss {
+        font-size: 40px;
+        position: relative;
+        right: 180px;
+        top: 20px;
+      }
+      .sea {
+        height: 60px;
+        width: 790px;
+        position: relative;
+        right: 250px;
+        top: 40px;
+      }
+      .main2 {
+        position: relative;
+        top: 50px;
+        height: 2000px;
+        width: 1530px;
+      }
+      .mai {
+        position: relative;
+
+        left: 140px;
+        height: 2000px;
+        width: 1300px;
+      }
+
+      .order {
+        font-size: 20px;
+        background-color: white;
+        height: 70px;
+        width: 350px;
+
+        position: relative;
+        bottom: 74px;
+        border-radius: 5%;
+        border-top: none;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .card {
+        border-radius: 10px;
+        border-bottom: none;
+        position: relative;
+        right: 50px;
+      }
+
+      .write {
+        background-color: azure;
+        color: black;
+        width: 380px;
+        height: 100px;
+        position: relative;
+        right: 50px;
+        bottom: 105px;
+        border-radius: 20px;
+      }
+      .img {
+        border-radius: 20px;
+      }
+      .title {
+        position: relative;
+        top: 30px;
+        left: 20px;
+        font-size: 20px;
+      }
+      .des {
+        position: relative;
+        top: 30px;
+        left: 20px;
+      }
+      .card1 {
+        border-radius: 10px;
+        border-bottom: none;
+
+        position: relative;
+        left: 850px;
+        right: 50px;
+        bottom: 407px;
+      }
+
+      .write1 {
+        background-color: azure;
+        color: black;
+        width: 380px;
+        right: 50px;
+        height: 100px;
+        position: relative;
+        bottom: 105px;
+        border-radius: 20px;
+
+        position: relative;
+        left: 850px;
+        bottom: 510px;
+      }
+      .img1 {
+        border-radius: 20px;
+      }
+      .title1 {
+        position: relative;
+        top: 30px;
+        left: 20px;
+        font-size: 20px;
+      }
+      .des1 {
+        position: relative;
+        top: 30px;
+        left: 20px;
+      }
+      .card2 {
+        border-radius: 10px;
+        border-bottom: none;
+
+        position: relative;
+        bottom: 815px;
+        left: 405px;
+      }
+
+      .write2 {
+        background-color: azure;
+        color: black;
+        width: 380px;
+        height: 100px;
+        position: relative;
+        bottom: 112px;
+
+        border-radius: 20px;
+
+        position: relative;
+        bottom: 920px;
+        left: 405px;
+      }
+      .img2 {
+        border-radius: 20px;
+      }
+      .title2 {
+        position: relative;
+        top: 30px;
+        left: 20px;
+        font-size: 20px;
+      }
+      .des2 {
+        position: relative;
+        top: 30px;
+        left: 20px;
+      }
+      .main3 {
+        position: relative;
+        bottom: 850px;
+      }
+      .img2 {
+        margin-right: 30px;
+        border-radius: 10px;
+      }
+      .lie {
+        font-size: 23px;
+        background-color: transparent;
+        border: none;
+        color: #ffffff;
+      }
+
+      .main4 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+
+        position: relative;
+        bottom: 670px;
+      }
+      .h1 {
+        position: relative;
+        bottom: 700px;
+      }
+
+      .box {
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      .title {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .para {
+        margin-bottom: 10px;
+        position: relative;
+        top: 25px;
+        left: 20px;
+      }
+      .btn {
+        position: relative;
+        left: 390px;
+        bottom: 30px;
+      }
+      .btn2 {
+        position: relative;
+        left: 200px;
+        top: 30px;
+      }
+      .main5 {
+        width: 1700px;
+        height: 400px;
+
+        position: relative;
+        right: 150px;
+        bottom: 500px;
+      }
+      .container1 {
+        width: 1700px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin: 0 auto;
+        height: 400px;
+        position: relative;
+        bottom: 80px;
+      }
+
+      .nda {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .radio-group {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      .radio-button {
+        margin: 0 10px;
+      }
+
+      .input-group {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      input[type="email"] {
+        width: 250px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .btn4 {
+        background-color: #f44336;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        position: relative;
+        left: 1000px;
+        bottom: 57px;
+      }
+
+      button:hover {
+        opacity: 0.8;
+      }
+
+      .download-buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .download-button {
+        margin: 0 10px;
+      }
+
+      .download-button img {
+        width: 150px;
+      }
+      .img4 {
+        position: relative;
+        bottom: 250px;
+        right: 370px;
+      }
+      .con {
+        position: relative;
+        left: 250px;
+        top: 80px;
+      }
+      .accord {
+        margin-top: 25px;
+      }
+      .question {
+        border: 2px solid rgb(92, 92, 92);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1000px;
+        height: 60px;
+      }
+      .answer {
+        width: 1000px;
+        max-height: 0;
+        overflow: hidden;
+        letter-spacing: 2px;
+      }
+      .answer.active {
+        max-height: fit-content;
+        border: 2px solid rgb(92, 92, 92);
+        border-top: none;
+      }
+      .question.active {
+        border-bottom: none;
+      }
+
+      .main6 {
+        height: 600px;
+      }
+      .question h2 {
+        position: relative;
+        left: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .img9 {
+        position: relative;
+        right: 14px;
+      }
+      .head2 {
+        background-color: #fff;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo1 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        position: relative;
+        left: 220px;
+      }
+
+      .flags {
+        display: flex;
+        position: relative;
+        left: 360px;
+
+        border: 1px solid black;
+      }
+
+      .flags img {
+        width: 30px;
+        height: 25px;
+      }
+      .flags1 img {
+        width: 30px;
+        height: 25px;
+      }
+      .flags1 {
+        display: flex;
+        position: relative;
+        right: 190px;
+
+        border: 1px solid black;
+      }
+
+      .flags select {
+        border: none;
+        background-color: transparent;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      nav {
+        display: flex;
+        gap: 40px;
+        margin-top: 40px;
+        justify-content: space-around;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .about {
+        position: relative;
+        bottom: 10px;
+        right: 450px;
+      }
+      .about1 {
+        position: relative;
+        bottom: 316px;
+        right: 210px;
+      }
+      .about2 {
+        position: relative;
+        bottom: 586px;
+        left: 20px;
+      }
+      .about3 {
+        position: relative;
+        bottom: 700px;
+        left: 300px;
+      }
+      .about3 .ul,
+      li {
+        margin-top: 20px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+      }
+
+      .social {
+        height: 150px;
+
+        width: 150px;
+        position: relative;
+        left: 1190px;
+        bottom: 880px;
+      }
+
+      .footer {
+        text-align: center;
+        padding: 20px 0;
+
+        margin-top: 40px;
+        position: relative;
+        bottom: 600px;
+      }
+      .main7 {
+        height: 700px;
+      }
+      .footer p {
+        font-size: 14px;
+        color: #000000;
+        margin: 0;
+      }
+      .play-img {
+        position: relative;
+        right: 14px;
+      }
+      .main10 {
+        font-family: sans-serif;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        position: absolute;
+        z-index: 1;
+        height: 1000px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+      }
+
+      .container9 {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 5px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        width: 350px;
+        position: absolute;
+        bottom: 450px;
+      }
+      .crossbtn {
+        position: absolute;
+        left: 380px;
+        top: 20px;
+        width: 20px;
+        height: 20px;
+        font-size: 25px;
+        background-color: white;
+        border: none;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .input-group {
+        margin-bottom: 15px;
+      }
+
+      .input-group input {
+        width: 320px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+
+      .button {
+        background-color: #ff4d4d;
+        color: #fff;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        width: 340px;
+      }
+
+      .button:hover {
+        background-color: #cc0000;
+      }
+
+      .or {
+        text-align: center;
+        margin-bottom: 15px;
+      }
+
+      .continue-with {
+        background-color: #fff;
+        padding: 12px 20px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 15px;
+        width: 340px;
+      }
+
+      .continue-with:hover {
+        background-color: #000000;
+      }
+
+      .continue-with img {
+        width: 20px;
+      }
+
+      .sign-in {
+        padding: 12px 20px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 15px;
+        width: 340px;
+      }
+
+      .sign-in:hover {
+        background-color: #f0f0f0;
+      }
+
+      .sign-in img {
+        width: 20px;
+      }
+
+      .sign-in span {
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      .new-account {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .new-account a {
+        color: #ff4d4d;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .signup {
+        width: 100%;
+        height: 900px;
+        font-family: Arial, sans-serif;
+
+        display: none;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        cursor: pointer;
+
+        position: absolute;
+        top: 0px;
+        z-index: 1;
+        backdrop-filter: blur(10%);
+        background-color: #fffafa;
+      }
+
+      .container11 {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+        padding: 30px;
+        width: 400px;
+        position: absolute;
+        bottom: 300px;
+      }
+
+      .container11 h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .container11 input[type="text"],
+      .container11 input[type="email"],
+      .container11 input[type="password"] {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      .container11 input[type="checkbox"] {
+        margin-right: 5px;
+      }
+
+      .container11 button {
+        background-color: #ff0000;
+        color: #fff;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      button:hover {
+        background-color: #000000;
+      }
+
+      .or {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      .container11 .social-login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      .container11 .social-login button {
+        background-color: #fff;
+        color: #333;
+        padding: 12px 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        cursor: pointer;
+        margin: 0 10px;
+      }
+
+      .container11 .social-login button:hover {
+        background-color: #eee;
+      }
+
+      .container11 .google-icon {
+        width: 60px;
+        height: 20px;
+        margin-right: 5px;
+        position: relative;
+        top: 6px;
+      }
+
+      .container11.already-account {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .container11 .already-account a {
+        color: #d80000;
+        text-decoration: none;
+      }
+
+      .container11 .already-account a:hover {
+        text-decoration: underline;
+      }
+      .sign {
+        cursor: pointer;
+      }
+      .cross2 {
+        color: #000000;
+        border: none;
+        z-index: 1;
+        font-size: 30px;
+        position: absolute;
+        top: 100px;
+        left: 950px;
+        width: 20px;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="signup">
+      <div><button class="cross2">x</button></div>
+      <div class="container11">
+        <h2>Sign up</h2>
+
+        <form>
+          <input type="text" placeholder="Full Name" required />
+          <input class="email1" type="email" placeholder="Email" required />
+          <input
+            class="password10"
+            type="password"
+            placeholder="Password"
+            required
+          />
+          <input type="checkbox" id="terms" />
+          <label for="terms"
+            >I agree to Zomato's Terms of Service, Privacy Policy and Content
+            Policies</label
+          >
+          <button id="signup" type="submit">Create account</button>
+        </form>
+        <div class="or">Or</div>
+        <div class="social-login">
+          <button>
+            <img
+              src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+              alt="Google"
+              class="google-icon"
+            />Sign in with Google
+          </button>
+        </div>
+        <br />
+        <div class="already-account">
+          Already have an account? <a href="#">Log in</a>
+        </div>
+      </div>
+    </div>
+    <div id="mainModal" class="main10 show">
+      <div class="container9">
+        <button class="crossbtn">x</button>
+        <h1>Login</h1>
+        <div class="input-group">
+          <select class="" name="country-code" id="country-code">
+            <option value="+91">+91</option>
+          </select>
+          <input type="text" id="phone" placeholder="Phone number" />
+        </div>
+        <button class="button">Send One Time Password</button>
+        <div class="or">or</div>
+        <button class="continue-with">
+          <img
+            src="http://pluspng.com/img-png/google-logo-png-google-logo-icon-png-transparent-background-1000.png"
+            alt="Email icon"
+          />
+          Continue with Email
+        </button>
+        <button class="sign-in">
+          <img
+            src="https://clipartcraft.com/images/transparent-background-google-logo-cool-6.png"
+            alt="Google icon"
+          />
+          <span>Sign in with Google</span>
+        </button>
+        <div class="new-account">
+          New to Zomato? <a href="#">Create account</a>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="navbar">
+        <a href="./get.html"> <p>Get the App</p></a>
+        <ul>
+          <li>Investor Relation</li>
+          <li>Add resturant</li>
+          <li id="loginBtn" class="lie"><button class="lie">login</button></li>
+          <li class="sign"><a>Sign up</a></li>
+        </ul>
+      </div>
+      <div class="zo">
+        <img
+          src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png"
+          height="60px"
+        />
+        <p class="diss">Discover the best food & drinks in <b>Bhopal</b></p>
+        <button>
+          <img
+            src="https://www.pngkit.com/png/full/26-269603_search-magnifying-glass-icon-png-grey.png"
+            height="20px"
+          />
+        </button>
+
+        <input
+          class="sea"
+          type="name"
+          placeholder="search for restaurant,cuisine or a dish"
+        />
+      </div>
+    </div>
+    <div class="main2">
+      <div class="mai">
+        <a href="./page.html">
+          <div class="card">
+            <img
+              class="img"
+              src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+              height="300px"
+              width="380px"
+            />
+          </div>
+          <div class="write">
+            <div class="title"><b>Orber Online</b></div>
+            <div class="des">Get your order to your home or offices</div>
+          </div>
+        </a>
+        <div class="card1">
+          <img
+            class="img1"
+            src="https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+            height="300px"
+            width="380px"
+          />
+        </div>
+        <div class="write1">
+          <div class="title1"><b>Dining</b></div>
+          <div class="des1">views citys best dining & lunch</div>
+        </div>
+        <div class="card2">
+          <img
+            class="img2"
+            src="https://b.zmtcdn.com/webFrontend/d9d80ef91cb552e3fdfadb3d4f4379761647365057.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+            height="300px"
+            width="380px"
+          />
+        </div>
+        <div class="write2">
+          <div class="title2"><b>Nightlife and Clubs</b></div>
+          <div class="des2">Explore the city's top outlets</div>
+        </div>
+        <div class="main3">
+          <h1>Collections</h1>
+          <p>
+            Explore curated lists of top restaurants, cafes, pubs, and bars in
+            Bhopal, based on trends
+          </p>
+          <br />
+          <div class="img2">
+            <img
+              style="border-radius: 15px"
+              src="https://b.zmtcdn.com/data/collections/61d06b1dc0a478a6216bcf07ff8b2d67_1686730150.jpg?output-format=webp"
+              height="400px"
+              width="300px"
+            />
+            <img
+              style="border-radius: 15px"
+              src="https://b.zmtcdn.com/data/collections/a1e31eb92bb9951aaf1750d88497adb4_1686729607.jpg?output-format=webp"
+              height="400px"
+              width="300px"
+            />
+            <img
+              style="border-radius: 15px"
+              src="https://b.zmtcdn.com/data/collections/21ebc8e2867c6917de5b0eb1aae8174e_1686727622.jpg?output-format=webp"
+              height="400px"
+              width="300px"
+            />
+            <img
+              style="border-radius: 15px"
+              src="https://b.zmtcdn.com/data/collections/293255cbfe49f4ebdb244c1bfc3a0f74_1686806499.jpg?output-format=webp"
+              height="400px"
+              width="300px"
+            />
+          </div>
+        </div>
+        <h1 class="h1">Popular Localities in and around Bhopal</h1>
+        <br />
+
+        <div class="main4">
+          <div class="box">
+            <div class="title">Maharana Pratap Nagar</div>
+            <div class="para">454 places</div>
+            <button class="btn">></button>
+          </div>
+
+          <div class="box">
+            <div class="title">TT Nagar</div>
+            <div class="para">314 places</div>
+            <button class="btn">></button>
+          </div>
+
+          <div class="box">
+            <div class="title">Arera Colony</div>
+            <div class="para">267 places</div>
+            <button class="btn">></button>
+          </div>
+
+          <div class="box">
+            <div class="title">Gulmohar Colony</div>
+            <div class="para">328 places</div>
+            <button class="btn">></button>
+          </div>
+
+          <div class="box">
+            <div class="title">Kohefiza</div>
+            <div class="para">190 places</div>
+            <button class="btn">></button>
+          </div>
+
+          <div class="box">
+            <div class="title">Peer Gate Area</div>
+            <div class="para">220 places</div>
+            <button class="btn">></button>
+          </div>
+
+          <div class="box">
+            <div class="title">Habib Ganj</div>
+            <div class="para">129 places</div>
+            <button class="btn">></button>
+          </div>
+
+          <div class="box">
+            <div class="title">BHEL</div>
+            <div class="para">535 places</div>
+            <button class="btn">></button>
+          </div>
+
+          <div class="box">
+            <button class="btn2">See More ..</button>
+          </div>
+        </div>
+        <div class="main5">
+          <div class="container1">
+            <h1 class="nda">Get the Zomato app</h1>
+            <p class="nda">
+              We will send you a link, open it on your phone to download the app
+            </p>
+            <div class="radio-group">
+              <div class="radio-button">
+                <input type="radio" name="contact" value="email" /> Email
+              </div>
+              <div class="radio-button">
+                <input type="radio" name="contact" value="phone" /> Phone
+              </div>
+            </div>
+            <div class="input-group">
+              <input type="email" placeholder="Email" />
+            </div>
+            <button class="btn4">Share App Link</button>
+            <p class="nda">Download app from</p>
+            <div class="download-buttons">
+              <div class="download-button">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.zomato.android"
+                  ><img
+                    src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png"
+                    alt="Get it on Google Play"
+                /></a>
+              </div>
+              <div class="download-button">
+                <a href="https://apps.apple.com/us/app/zomato/id417567707"
+                  ><img
+                    src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png"
+                    alt="Download on the App Store"
+                /></a>
+              </div>
+            </div>
+            <nav class="img4">
+              <img
+                src="https://b.zmtcdn.com/data/o2_assets/f773629053b24263e69f601925790f301680693809.png"
+                height="280px"
+                width="250px"
+              />
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main6">
+      <div class="con">
+        <h1>Explore options near me</h1>
+        <div class="accord">
+          <div class="question">
+            <h2>Popular cuisines near me</h2>
+            <img
+              class="img9"
+              src="https://cdn-icons-png.flaticon.com/512/57/57150.png"
+              height="20px"
+              width="20px"
+            />
+          </div>
+          <br />
+          <div class="answer">
+            <p>
+              Bakery food . near meBeverages food . near meBiryani . food near
+              meBurger food . near meChinese food . near meCoffee food . near
+              meContinental food . near meDesserts food . near meKebab food .
+              near meMomos . food near meMughlai food . near meNorth Indian food
+              . near mePasta food . near mePizza food . near meRolls food . near
+              meSandwich food . near meShake food . near meSouth Indian food .
+              near meStreet food . near meTea . food near me
+            </p>
+          </div>
+        </div>
+        <div class="accord">
+          <div class="question">
+            <h2>Popular restaurant types near me</h2>
+            <img
+              class="img9"
+              src="https://cdn-icons-png.flaticon.com/512/57/57150.png"
+              height="20px"
+              width="20px"
+            />
+          </div>
+          <br />
+          <div class="answer">
+            <p>
+              Bakery food . near meBeverages food . near meBiryani . food near
+              meBurger food . near meChinese food . near meCoffee food . near
+              meContinental food . near meDesserts food . near meKebab food .
+              near meMomos . food near meMughlai food . near meNorth Indian food
+              . near mePasta food . near mePizza food . near meRolls food . near
+              meSandwich food . near meShake food . near meSouth Indian food .
+              near meStreet food . near meTea . food near me
+            </p>
+          </div>
+        </div>
+        <div class="accord">
+          <div class="question">
+            <h2>Top Restaurant Chains</h2>
+            <img
+              class="img9"
+              src="https://cdn-icons-png.flaticon.com/512/57/57150.png"
+              height="20px"
+              width="20px"
+            />
+          </div>
+          <br />
+          <div class="answer">
+            <p>
+              Bakery food . near meBeverages food . near meBiryani . food near
+              meBurger food . near meChinese food . near meCoffee food . near
+              meContinental food . near meDesserts food . near meKebab food .
+              near meMomos . food near meMughlai food . near meNorth Indian food
+              . near mePasta food . near mePizza food . near meRolls food . near
+              meSandwich food . near meShake food . near meSouth Indian food .
+              near meStreet food . near meTea . food near me
+            </p>
+          </div>
+        </div>
+        <div class="accord">
+          <div class="question">
+            <h2>Cities We Deliver To</h2>
+            <img
+              class="img9 active"
+              src="https://cdn-icons-png.flaticon.com/512/57/57150.png"
+              height="20px"
+              width="20px"
+            />
+          </div>
+          <br />
+          <div class="answer">
+            <p>
+              Bakery food . near meBeverages food . near meBiryani . food near
+              meBurger food . near meChinese food . near meCoffee food . near
+              meContinental food . near meDesserts food . near meKebab food .
+              near meMomos . food near meMughlai food . near meNorth Indian food
+              . near mePasta food . near mePizza food . near meRolls food . near
+              meSandwich food . near meShake food . near meSouth Indian food .
+              near meStreet food . near meTea . food near me
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main7" style="background-color: #f44336">
+      <div class="head2">
+        <div class="logo1">
+          <img
+            src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png?fit=around|198:42&crop=198:42;*,*"
+          />
+        </div>
+        <div class="flags">
+          <img
+            src="https://tse1.mm.bing.net/th?id=OIP.YHufaYYtdq8EtHQRPAx_9QHaE8&pid=Api&P=0&h=180"
+            alt="India flag"
+          />
+          <select>
+            <option value="India">India</option>
+            <option value="India">usa</option>
+            <option value="India">australia</option>
+          </select>
+        </div>
+        <div class="flags1">
+          <img
+            src="https://tse3.mm.bing.net/th?id=OIP.AZ_2VgLxeAuO5-lkgIzWfQHaHa&pid=Api&P=0&h=180"
+            alt="Globe icon"
+          />
+          <select>
+            <option value="English">English</option>
+            <option value="English">hindi</option>
+            <option value="English">spanish</option>
+          </select>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li class="about">
+            <h3>ABOUT ZOMATO</h3>
+            <ul>
+              <li><a href="#">Who We Are</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Work With Us</a></li>
+              <li><a href="#">Investor Relations</a></li>
+              <li><a href="#">Report Fraud</a></li>
+              <li><a href="#">Press Kit</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="about1">
+            <h3>ZOMAVERSE</h3>
+            <ul>
+              <li><a href="#">Zomato</a></li>
+              <li><a href="#">Blinkit</a></li>
+              <li><a href="#">Feeding India</a></li>
+              <li><a href="#">Hyperpure</a></li>
+              <li><a href="#">Zomaland</a></li>
+              <li><a href="#">Weather Union</a></li>
+            </ul>
+          </li>
+          <li class="about2">
+            <h3>FOR RESTAURANTS</h3>
+            <ul>
+              <li><a href="#">Partner With Us</a></li>
+              <li><a href="#">Apps For You</a></li>
+            </ul>
+          </li>
+          <li class="about3">
+            <h3>LEARN MORE</h3>
+            <ul>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Security</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="social">
+        <div class="social-links">
+          <h3>Social Media</h3>
+          <br />
+          <img
+            src="https://bwandungi.files.wordpress.com/2018/07/instagram-icon-white-on-black-circle-e1532363575836.png"
+            height="30px"
+            width="30px"
+          />
+          <img
+            src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_whatsapp-512.png"
+            height="30px"
+            width="30px"
+          />
+          <img
+            src="https://www.freeiconspng.com/uploads/facebook-logo-png-white-image-galleries--imagekbm-25.png"
+            height="30px"
+            width="30px"
+          />
+          <img
+            src="https://icon-library.com/images/black-and-white-twitter-icon/black-and-white-twitter-icon-11.jpg"
+            height="30px"
+            width="30px"
+          />
+        </div>
+        <br />
+        <div class="app-store">
+          <a href="#"
+            ><img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/1200px-Download_on_the_App_Store_Badge.svg.png "
+              alt="App Store"
+              height="45px"
+              width="150px" /></a
+          ><br />
+          <a href="#"
+            ><img
+              class="play-img"
+              src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+              alt="Google Play"
+              height="60px"
+              width="180px"
+          /></a>
+        </div>
+      </div>
+      <hr />
+      <div class="footer">
+        <p>
+          By continuing past this page, you agree to our Terms of Service,
+          Cookie Policy, Privacy Policy and Content Policies. All trademarks are
+          properties of their respective owners. 2008-2024 © Zomato T™ Ltd. All
+          rights reserved.
+        </p>
+      </div>
+    </div>
+    <script>
+      const accord = document.querySelectorAll(".accord");
+
+      accord.forEach((accord) => {
+        const img = accord.querySelector(".img9");
+        const answer = accord.querySelector(".answer");
+        const question = accord.querySelector(".question");
+
+        accord.addEventListener("click", function () {
+          img.classList.toggle("active");
+          answer.classList.toggle("active");
+          question.classList.toggle("active");
+        });
+      });
+
+      const login = document.querySelector("#loginBtn");
+      console.log(login + "works");
+      login.addEventListener("click", function () {
+        const modal = document.querySelector("#mainModal");
+        console.log("clicked");
+        modal.style.display = "flex";
+      });
+      const cross = document.querySelector(".crossbtn");
+      console.log("hgk");
+      cross.addEventListener("click", function () {
+        console.log("nkj");
+        const modal = document.querySelector("#mainModal");
+        modal.style.display = "none";
+      });
+      const sign = document.querySelector(".sign");
+      sign.addEventListener("click", function () {
+        const main = document.querySelector(".signup");
+        main.style.display = "flex";
+      });
+      const cross2 = document.querySelector(".cross2");
+
+      cross2.addEventListener("click", function () {
+        const main = document.querySelector(".signup");
+        main.style.display = "none";
+      });
+    </script>
+    <script type="module" src="./zomato.js"></script>
+  </body>
+</html>
