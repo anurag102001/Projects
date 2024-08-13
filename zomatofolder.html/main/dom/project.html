@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: antiquewhite;
+      }
+      .board {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        margin-right: auto;
+        margin-left: 20%;
+        background-color: aquamarine;
+      }
+      .cell {
+        border-bottom: 5px solid black;
+        border-right: 5px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 90px;
+        font-weight: 900;
+        line-height: 95px;
+        padding: 20px;
+        text-align: center;
+        user-select: none;
+        cursor: pointer;
+        padding: 80px;
+      }
+      .cell.cell:nth-child(3n) {
+        border-right: none;
+      }
+      .cell:nth-child(n + 7) {
+        border-bottom: none;
+      }
+      .control {
+        width: 50%;
+        margin-right: auto;
+        margin-left: 20%;
+      }
+      button {
+        position: relative;
+        right: 900px;
+        top: 350px;
+        height: 90px;
+        width: 90px;
+        color: white;
+        background-color: darkcyan;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="board">
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+    </div>
+    <div class="btn"><button>start</button></div>
+    <script>
+      let board = document.querySelector(".board");
+      let cell = document.querySelector(".cell");
+      let btn = document.querySelector("button");
+      function checkwinner() {
+        if (
+          (col[0].innertext == "x" &&
+            col[1].innertext == "x" &&
+            col[2].innertext == "x") ||
+          (col[3].innertext == "x" &&
+            col[4].innertext == "x" &&
+            col[5].innertext == "x") ||
+          (col[6].innertext == "x" &&
+            col[7].innertext == "x" &&
+            col[8].innertext == "x") ||
+          (col[0].innertext == "x" &&
+            col[3].innertext == "x" &&
+            col[6].innertext == "x") ||
+          (col[1].innertext == "x" &&
+            col[4].innertext == "x" &&
+            col[7].innertext == "x") ||
+          (col[2].innertext == "x" &&
+            col[5].innertext == "x" &&
+            col[8].innertext == "x") ||
+          (col[0].innertext == "x" &&
+            col[4].innertext == "x" &&
+            col[8].innertext == "x") ||
+          (col[2].innertext == "x" &&
+            col[4].innertext == "x" &&
+            col[6].innertext == "x")
+        ) {
+          return 1;
+        } else if (
+          (col[0].innertext == "o" &&
+            col[1].innertext == "o" &&
+            col[2].innertext == "o") ||
+          (col[3].innertext == "o" &&
+            col[4].innertext == "o" &&
+            col[5].innertext == "o") ||
+          (col[6].innertext == "o" &&
+            col[7].innertext == "o" &&
+            col[8].innertext == "o") ||
+          (col[0].innertext == "o" &&
+            col[3].innertext == "o" &&
+            col[6].innertext == "o") ||
+          (col[1].innertext == "o" &&
+            col[4].innertext == "o" &&
+            col[7].innertext == "o") ||
+          (col[2].innertext == "o" &&
+            col[5].innertext == "o" &&
+            col[8].innertext == "o") ||
+          (col[0].innertext == "o" &&
+            col[4].innertext == "o" &&
+            col[8].innertext == "o") ||
+          (col[2].innertext == "o" &&
+            col[4].innertext == "o" &&
+            col[6].innertext == "o")
+        ) {
+          return 2;
+        }
+      }
+    </script>
+  </body>
+</html>

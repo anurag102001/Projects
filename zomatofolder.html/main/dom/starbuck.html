@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starbucks Clone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      background-color: #00704a;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 40px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background: url("path/to/hero-image.jpg") no-repeat center center/cover;
+      color: white;
+    }
+
+    .menu {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .menu-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .menu-item {
+      background-color: #f5f5f5;
+      border-radius: 5px;
+      padding: 20px;
+      width: 200px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background-color: #00704a;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+      }
+
+      .menu-items {
+        flex-direction: column;
+      }
+    }
+  </style>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="path/to/starbucks-logo.png" alt="Starbucks Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Rewards</a></li>
+          <li><a href="#">Gift Cards</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Welcome to Starbucks</h1>
+        <p>Enjoy your favorite drinks and snacks.</p>
+        <button>Order Now</button>
+      </section>
+
+      <section class="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+          <!-- Menu items will go here -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2024 Starbucks. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const menuItems = [
+          { name: "Espresso", price: "$2.00" },
+          { name: "Latte", price: "$3.50" },
+          { name: "Cappuccino", price: "$3.00" },
+          { name: "Mocha", price: "$3.75" },
+          { name: "Macchiato", price: "$3.25" },
+        ];
+
+        const menuContainer = document.querySelector(".menu-items");
+
+        menuItems.forEach((item) => {
+          const menuItem = document.createElement("div");
+          menuItem.classList.add("menu-item");
+          menuItem.innerHTML = `
+                <h3>${item.name}</h3>
+                <p>${item.price}</p>
+            `;
+          menuContainer.appendChild(menuItem);
+        });
+      });
+      const orderButton = document.querySelector(".hero button");
+      orderButton.addEventListener("click", () => {
+        alert("Order functionality coming soon!");
+      });
+    </script>
+  </body>
+</html>

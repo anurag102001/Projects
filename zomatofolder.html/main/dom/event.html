@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0%;
+        margin: 0%;
+      }
+      .class {
+        height: 500px;
+        width: 1200px;
+        background-color: rgb(109, 109, 255);
+      }
+      table {
+        background-color: azure;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="class">
+      <h1 style="text-align: center"></h1>
+      <table border="">
+        <tr>
+          <th>name</th>
+          <th>roll no</th>
+          <th>course</th>
+        </tr>
+        <tr>
+          <td>anurag</td>
+          <td>10</td>
+          <td>bca</td>
+        </tr>
+      </table>
+
+      <button>click</button>
+    </div>
+  </body>
+  <script>
+    let div = document.querySelector(".class");
+    let h1 = document.querySelector("h1");
+    let btn = document.querySelector("button");
+    let table1 = document.querySelector("table")
+    table1.addEventListener("mouseover", function () {
+      table1.style.backgroundColor = "red";
+    });
+    table1.addEventListener("mouseout", function () {
+        table1.style.backgroundColor = "yellow";
+      });
+    /*
+     div.addEventListener("dblclick",function(){
+         div.style.padding= "10px";
+     })
+    div.addEventListener("mouseout", function () {
+           const imc = "https://tse2.mm.bing.net/th?id=OIP.OQ4UOBVKZ2lHFgZ8o2aVYAHaEK&pid=Api&P=0&h=180"
+
+        div.style.backgroundImage = `url(${imc})`
+
+
+       });
+       div.addEventListener("mouseover", function () {
+            const imc = "https://tse3.mm.bing.net/th?id=OIP.7jf1Agjoo8FcDYYOqqlm1wHaEK&pid=Api&P=0&h=180"
+
+           div.style.backgroundImage = `url(${imc})`
+         })
+     h1.addEventListener("mouseover", function () {
+       h1.innerText = "MOUSE IN";
+     });
+     h1.addEventListener("mouseout", function () {
+       h1.innerText = "MOUSE OUT";
+     });
+
+     /* btn.addEventListener("click",function(){
+         alert("this is ronaldo");
+     });
+
+      div.addEventListener("mouseout", function () {
+       //  const imc = "https://tse2.mm.bing.net/th?id=OIP.OQ4UOBVKZ2lHFgZ8o2aVYAHaEK&pid=Api&P=0&h=180"
+         h1.innerText="Messi";
+       div.style.backgroundColor = "red";
+      // document.body.style.backgroundImage = `url(${imc})`
+
+     });
+     div.addEventListener("mouseover", function () {
+         //  const imc = "https://tse2.mm.bing.net/th?id=OIP.OQ4UOBVKZ2lHFgZ8o2aVYAHaEK&pid=Api&P=0&h=180"
+         //  h1.innerText="Messi";
+         div.style.backgroundColor = "pink";
+         document.body.style.backgroundImage = `url(${imc})`
+
+       });*/
+  </script>
+</html>
+()

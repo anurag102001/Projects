@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0%;
+        margin: 0%;
+      }
+      #navbar {
+        background-color: black;
+        height: 40px;
+        color: aliceblue;
+        border: 5px solid rgb(221, 44, 44);
+        display: flex;
+        justify-content: space-evenly;
+      }
+      a {
+        margin-right: 200px;
+      }
+      input {
+        text-align: center;
+        margin: 10px;
+      }
+      #nd {
+        color: #f0ff00;
+      }
+      button {
+        background-color: rgb(227, 165, 21);
+      }
+      .main {
+       
+        color: azure;
+        background-image: url("ronaldo.jpg");
+        background-size: cover;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     
+      }
+
+      footer {
+        background-color: black;
+        color: aliceblue;
+        text-align: center;
+        bottom: 20%;
+      }
+      #boo {
+        color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <a id="nd" href="https://www.youtube.com/">Neon Dad</a>
+      <a id="boo">account</a>
+      <a>sign up</a>
+      <a>contact us</a>
+      <a id="geo"
+        ><input type="search" placeholder="serach NeonDad.in" />
+        <button>submit</button></a
+      >
+    </div>
+    <div class="main">
+      <div>
+        <label> username</label>
+        <input type="username" placeholder="username" />
+      </div>
+      <div>
+        <label> last name</label>
+        <input type="last name" placeholder="last name" />
+      </div>
+      <div>
+        <label> password</label>
+        <input type="password" placeholder="password" />
+      </div>
+      <div>
+        <label> email</label> <input type="email" placeholder="email" />
+      </div>
+      <div>
+        <label> gender</label>
+        <input type="radio" id="genderChoice1" name="gender" value="male" />
+        <label for="genderChoice1">Male</label>
+        <input type="radio" id="genderChoice2" name="gender" value="female" />
+        <label for="genderChoice2">Female</label>
+      </div>
+      <div>
+        <label>Term and Candition</label>
+        <input type="checkbox" placeholder="choices" />
+      </div>
+      <button type="button">submit</button>
+    </div>
+    <footer>see you again</footer>
+    <footer>contact us - anurag102001@.email.com</footer>
+  </body>
+</html>

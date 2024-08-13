@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI";
+      }
+      .main {
+        background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/335ddde7-3955-499c-b4cc-ca2eb7e1ae71/a7d20bc1-831c-4f9d-8153-11bdf7a08d23/IN-en-20240624-POP_SIGNUP_TWO_WEEKS-perspective_WEB_13cda806-d858-493e-b4aa-f2792ff965dc_large.jpg");
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+      }
+      .navbar {
+        position: relative;
+        left: 80px;
+        height: 100px;
+        width: 100%;
+      }
+      .search {
+        position: relative;
+        left: 800px;
+        height: 30px;
+        border-radius: 5%;
+        height: 40px;
+        bottom: 40px;
+        background-color: black;
+        color: aliceblue;
+        border: 1px solid black;
+        border-radius: 2%;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        right: 40px;
+      }
+      .button {
+        background-color: red;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        position: relative;
+        left: 820px;
+        color: azure;
+        height: 40px;
+        width: 100px;
+        bottom: 40px;
+      }
+      .mainbar {
+        color: white;
+        width: 1000px;
+        height: 600px;
+        margin-left: 200px;
+        text-align: center;
+        margin-top: 150px;
+        word-spacing: 4px;
+        font-weight: 900;
+      }
+      .head {
+        font-size: xx-large;
+        font-weight: 900;
+        font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto,
+          Ubuntu, sans-serif;
+        font-size: 48px;
+      }
+      .email {
+        width: 600px;
+        height: 50px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        border: 2px solid white;
+        font-size: 16px;
+        font-weight: 300;
+      }
+      .button1 {
+        background-color: red;
+        width: 200px;
+        height: 50px;
+        text-align: center;
+        border-radius: 10%;
+        color: white;
+        border: 2px solid white;
+        font-size: 24px;
+        font-weight: 500;
+      }
+      .main1 {
+        max-width: 100%;
+        height: 900px;
+        background-color: black;
+        color: rgb(255, 255, 255);
+        position: relative;
+        bottom: 20px;
+      }
+      .image2 {
+        position: relative;
+        left: 55%;
+      }
+      .video2 {
+        height: 520px;
+        width: 470px;
+        position: absolute;
+        left: 60.5%;
+        bottom: 25.5%;
+      }
+      .text2 {
+        height: 20%;
+        width: 30%;
+        position: relative;
+        left: 20%;
+        top: 40%;
+      }
+      .main2 {
+        width: 1520px;
+        height: 800px;
+        background-color: rgb(0, 0, 0);
+        position: relative;
+        top: 20%;
+      }
+      .text3 {
+        height: 250px;
+        width: 500px;
+        background-color: rgb(0, 0, 0);
+        position: relative;
+        left: 55%;
+        top: 39%;
+        color: rgb(255, 255, 255);
+      }
+      .image3 {
+        position: relative;
+        left: 10%;
+        bottom: 14%;
+      }
+      .divi {
+        height: 100px;
+        width: 350px;
+        background-color: rgb(0, 0, 0);
+        position: relative;
+        left: 20%;
+        bottom: 20%;
+        border: 4% solid white;
+      }
+      .thinks {
+        position: relative;
+        left: 5%;
+        border-radius: 8%;
+      }
+      .h3 {
+        position: relative;
+        left: 30%;
+        bottom: 95%;
+        color: azure;
+      }
+      .h5 {
+        position: relative;
+        left: 32%;
+        bottom: 100%;
+        color: rgb(63, 63, 225);
+        border: 2% solid white;
+      }
+      .main4 {
+        width: 1520px;
+        height: 700px;
+        background-color: black;
+      }
+      .text4 {
+        color: aliceblue;
+        position: relative;
+        top: 31%;
+        left: 20%;
+        background-color: rgb(0, 0, 0);
+        height: 300px;
+        width: 500px;
+      }
+      .image4 {
+        position: relative;
+        left: 50%;
+        bottom: 30%;
+      }
+      .main5 {
+        width: 1520px;
+        height: 700px;
+        background-color: black;
+      }
+      .text5 {
+        color: white;
+        height: 200px;
+        width: 450px;
+        position: relative;
+        left: 57%;
+        bottom: 34%;
+      }
+      .image5 {
+        position: relative;
+        top: 15%;
+        left: 10%;
+      }
+      .main6 {
+        color: white;
+        text-align: center;
+        background-color: black;
+        height: 800px;
+      }
+      .text6 {
+        width: 1450px;
+        height: 50px;
+        background-color: rgb(42, 39, 39);
+        margin: auto;
+        size: 1000px;
+      }
+      .net {
+        position: relative;
+        right: 40%;
+        top: 20%;
+      }
+      .add {
+        position: relative;
+        left: 45%;
+        bottom: 87%;
+      }
+      footer {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        color: aliceblue;
+        max-width: 60vw;
+        margin: auto;
+        background-color: rgb(0, 0, 0);
+      }.tv-image{
+        position: absolute;
+        
+      }
+      .footer {
+        display: flex;
+        flex-direction: column;
+        color: azure;
+      }
+      .nd {
+        background-color: transparent;
+        z-index: 100;
+        height: 300px;
+        width: 300px;
+        position: relative;
+        right: 550px;
+        bottom: 100px;
+      }
+      .video4{
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="navbar">
+        <img src="netf.png" height="80px" width="250px" />
+        <input class="search" type="search" placeholder="movies" />
+        <button class="button">Submit</button>
+        <br /><br />
+        <div class="mainbar">
+          <h1>
+            <h1 class="head">
+              <b><strong>Unlimited movies, TV shows and more</strong> </b>
+            </h1>
+          </h1>
+          <h2>Watch anywhere. Cancel anytime.</h2>
+          <h3>
+            Ready to watch? Enter your email to create or restart your
+            membership.
+          </h3>
+          <input class="email" type="name" placeholder="enter the movie" />
+          <button class="button1"><b>Get Started ></b></button>
+        </div>
+      </div>
+    </div>
+    <div class="main1">
+      <div class="text2">
+        <h1>Enjoy on your TV</h1>
+        <p>
+          Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
+          players and more.
+        </p>
+      </div>
+
+      <div class="image2">
+        <img
+          src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
+          alt="image"
+        />
+      </div>
+      <video class="video2" src="rr.mp4" loop autoplay muted></video>
+    </div>
+    <div class="main2">
+      <div class="text3">
+        <h1>Download your shows to watch offline</h1>
+        <h3>Save your favourites easily and always have something to watch.</h3>
+      </div>
+      <div class="image3">
+        <img
+          src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
+          alt="image"
+        />
+      </div>
+      <div class="divi">
+        <img
+          class="thinks"
+          src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png"
+          alt="image"
+          height="100px"
+          width="65px"
+        />
+        <h3 class="h3">Stranger Things</h3>
+        <h5 class="h5">Downloading....</h5>
+      </div>
+    </div>
+    <div class="main4">
+      <div class="text4">
+        <h1><b>Watch everywhere</b></h1>
+        <h4>
+          Stream unlimited movies and TV shows on your phone, tablet, laptop,
+          and TV.
+        </h4>
+      </div>
+      <div class="image4">
+        <div class="tv-image">
+          <img
+            src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png"
+          />
+        </div>
+        <div class="video4">
+          <video src="./rr.mp4" autoplay loop muted></video>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="main5">
+      <div class="image5">
+        <img
+          src="https://occ-0-6247-2186.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d"
+          alt="image"
+        />
+      </div>
+      <div class="text5">
+        <h1>Create profiles for kids</h1>
+        <h4>
+          Send children on adventures with their favourite characters in a space
+          made just for them—free with your membership.
+        </h4>
+      </div>
+    </div>
+    <br />
+    <div class="main6">
+      <h1>Frequently Asked Questions</h1>
+      <br />
+      <div class="text6">
+        <div class="net"><h2>what is Netflix</h2></div>
+        <div class="add"><h2>+</h2></div>
+      </div>
+      <div class="text6">
+        <div class="net"><h2>what for kids</h2></div>
+        <div class="add"><h2>+</h2></div>
+      </div>
+      <div class="text6">
+        <div class="net"><h2>Who much netflix Cost</h2></div>
+        <div class="add"><h2>+</h2></div>
+      </div>
+      <div class="text6">
+        <div class="net"><h2>Where can i watch</h2></div>
+        <div class="add"><h2>+</h2></div>
+      </div>
+      <div class="text6">
+        <div class="net"><h2>What I can watch in Netflix</h2></div>
+        <div class="add"><h2>+</h2></div>
+      </div>
+      <div class="text6">
+        <div class="net"><h2>Is netflix is good for kids</h2></div>
+        <div class="add"><h2>+</h2></div>
+      </div>
+      <br />
+      <h3>
+        Ready to watch? Enter your email to create or restart your membership.
+      </h3>
+      <br />
+      <input class="email" type="name" placeholder="enter the movie" />
+      <button class="button1"><b>Get Started ></b></button>
+    </div>
+    <footer>
+      <div class="footer">
+        <a href="faq">FAQ</a>
+        <a href="faq">Investor relation</a>
+        <a href="faq">privacy</a>
+        <a href="faq">speed test</a>
+      </div>
+      <div class="footer">
+        <a href="faq">FAQ</a>
+        <a href="faq">Investor relation</a>
+        <a href="faq">privacy</a>
+        <a href="faq">speed test</a>
+      </div>
+      <div class="footer">
+        <a href="faq">FAQ</a>
+        <a href="faq">Investor relation</a>
+        <a href="faq">privacy</a>
+        <a href="faq">speed test</a>
+      </div>
+      <div class="footer">
+        <a href="faq">FAQ</a>
+        <a href="faq">Investor relation</a>
+        <a href="faq">privacy</a>
+        <a href="faq">speed test</a>
+      </div>
+    </footer>
+  </body>
+</html>

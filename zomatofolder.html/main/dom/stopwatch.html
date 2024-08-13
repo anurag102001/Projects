@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        width: 600px;
+        height: 400px;
+        background-color: rgb(24, 152, 243);
+        border: 2px solid black;
+        border-radius: 10px;
+        font-size: 80px;
+        font-weight: 300;
+        position: relative;
+        left: 450px;
+        top: 50px;
+        display: flex;
+        align-items: center;
+      }
+      .main p {
+        margin-right: 20px;
+        position: relative;
+        left: 55px;
+      }
+      .start {
+        position: relative;
+        left: 450px;
+        top: 100px;
+        width: 100px;
+        height: 25px;
+      }
+      .stop {
+        position: relative;
+        left: 450px;
+        top: 100px;
+        width: 100px;
+        height: 25px;
+        margin-left: 50px;
+      }
+      .reset {
+        position: relative;
+        left: 450px;
+        top: 100px;
+        width: 100px;
+        height: 25px;
+        margin-left: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <p class="count">00</p>
+      <p class="sec">00</p>
+      <p class="min">00</p>
+      <p class="hours">00</p>
+    </div>
+    <br />
+    <button class="start">start</button>
+    <button class="stop">stop</button>
+    <button class="reset">reset</button>
+
+    <script>
+      let sec = 0;
+      let min = 0;
+      let hours = 0;
+      let count = 0;
+      let isRunning = true;
+      let startbtn = document.querySelector(".start");
+      let stopbtn = document.querySelector(".stop");
+      let resetbtn = document.querySelector(".reset");
+      startbtn.addEventListener("click", function () {
+        isRunning = true;
+        timer();
+      });
+      stopbtn.addEventListener("click", function () {
+        isRunning = false;
+        timer();
+      });
+      resetbtn.addEventListener("click", function () {
+        isRunning = false;
+
+        hours = 0;
+        min = 0;
+        sec = 0;
+        count = 0;
+        document.querySelector(".hours").innerHTML = "00";
+        document.querySelector(".min").innerHTML = "00";
+        document.querySelector(".sec").innerHTML = "00";
+        document.querySelector(".count").innerHTML = "00";
+      });
+
+      
+          let h = hours;
+          let se = sec;
+          let minV = min;
+          document.querySelector(".sec").innerText = se;
+          document.querySelector(".min").innerText = min;
+          document.querySelector(".hours").innerText = h;
+          document.querySelector(".count").innerText = count;
+
+          setTimeout(timer, 20);
+          function timer() {
+            if (isRunning) {
+              count++;
+              if (count == 100) {
+                sec++;
+                count = 0;
+              } else if (sec == 60) {
+                min++;
+                sec = 0;
+              } else if (min == 60) {
+                hours++;
+                min = 0;
+                sec = 0;
+              }
+              document.querySelector("hr").innerHTML = hrstep
+              document.querySelector("min").innerHTML = minstep
+              document.querySelector("sec").innerHTML = secstep
+              document.querySelector("count").innerHTML = countstep
+              
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      position: relative; /* parent container is relative */
+      background-color: #f0f0f0;
+      padding: 20px;
+      border: 1px solid #ddd;
+    }
+    
+    .relative {
+      position: relative; /* child element is relative */
+      top: 20px;
+      left: 30px;
+      background-color: #ccc;
+      padding: 10px;
+      border: 1px solid #aaa;
+    }
+    
+    .absolute {
+      position: absolute; /* child element is absolute */
+      top: 20px;
+      left: 30px;
+      background-color: #ccc;
+      padding: 10px;
+      border: 1px solid #aaa;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="relative">Position Relative</div>
+    <div class="absolute">Position Absolute</div>
+  </div>
+</body>
+</html>
