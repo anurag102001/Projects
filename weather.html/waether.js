@@ -7,7 +7,7 @@ let windspeed = document.querySelector("#windSp");
 let cond = document.querySelector("#condition");
 let logo = document.querySelector("#logo");
 
-let inputBar = document.querySelector("#input");
+let inputBar = document.querySelector("#inputTag");
 let searchBtn = document.querySelector("#search-addon");
 
 searchBtn.addEventListener("click", function () {
@@ -42,4 +42,4 @@ function screenUpdate(obj) {
   windspeed.innerHTML = windspeedData;
   cond.innerHTML = conditionData;
   logo.setAttribute("src", iconData);
-}
+};
